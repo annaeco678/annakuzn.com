@@ -8,7 +8,7 @@ export const PROJECTS: Project[] = [
     role: 'AI-Native Product Manager',
     description: 'EcoSort solves the problem of not knowing local recycling rules (bin colors and what goes where differ a lot from country to country).',
     longDescription: 'EcoSort was built to solve the alarming contamination rates in urban municipal waste systems. By designing a frictionless "scan-to-resolve" user loop, Anna led a team of engineering and data science professionals to integrate light-weight edge classification with highly specific localized recycling databases.',
-    image: '/src/assets/images/PH picture (4).png',
+    image: '/images/ph-picture.png',
     client: 'GreenCycle Initiative',
     tags: ['AI & Computer Vision', 'Product Strategy', 'B2C Mobile App', 'Sustainability Tech'],
     metrics: [
@@ -38,11 +38,11 @@ export const PROJECTS: Project[] = [
       'Designed the localized carbon-offset reward tier representing clear tangible user environmental metrics.'
     ],
     caseDashboardImages: [
-      '/src/assets/images/PH picture (4).png',
-      '/src/assets/images/next_work_laptop_1779273096388.png'
+      '/images/ph-picture.png',
+      '/images/next-work-laptop.png'
     ],
     nextWorkId: 'brickdev',
-    nextWorkImage: '/src/assets/images/brickshow.png',
+    nextWorkImage: '/images/brickshow.png',
     figmaLink: '#',
     websiteLink: '#'
   },
@@ -53,7 +53,7 @@ export const PROJECTS: Project[] = [
     role: 'Product & Regulatory Lead',
     description: 'A developer-first automated compliance layer and smart contract generator translating complex multi-state tax and legal codes into digital contract hooks.',
     longDescription: 'Brick.dev was created to resolve the high-friction gap dividing agile tech startups and dense regulatory legal protocols. By crafting standard legal templates and automating complex tax-bracket analyses, Brick.dev allows teams to automatically audit software contracts, compute interstate tax obligations, and generate pre-vetted legal papers on the fly. The dashboard is tailored specifically to developers with full API integration capabilities.',
-    image: '/src/assets/images/brickshow.png',
+    image: '/images/brickshow.png',
     client: 'Brick Compliance Group',
     tags: ['LegalTech', 'Tax & Contract Automation', 'B2B SaaS', 'Developer API Tools'],
     metrics: [
@@ -83,13 +83,13 @@ export const PROJECTS: Project[] = [
       '3. Conducted 30+ user interviews to build trust and education tools, increasing onboarding conversion by 15.'
     ],
     caseDashboardImages: [
-      '/src/assets/images/tghunt_landing_1779273012983.png',
-      '/src/assets/images/tghunt_widget_1779273034938.png',
-      '/src/assets/images/clickhunt_metrics_1779273054228.png',
-      '/src/assets/images/clickhunt_chart_1779273075392.png'
+      '/images/tghunt-landing.png',
+      '/images/tghunt-widget.png',
+      '/images/clickhunt-metrics.png',
+      '/images/clickhunt-chart.png'
     ],
     nextWorkId: 'legalskill',
-    nextWorkImage: '/src/assets/images/legal skill.png',
+    nextWorkImage: '/images/legal-skill.png',
     figmaLink: '#',
     websiteLink: '#'
   },
@@ -100,7 +100,7 @@ export const PROJECTS: Project[] = [
     role: 'Founder & AI Architect',
     description: 'I built a niche skill rooted in my own legal expertise in international contract review, focused on tax agent obligations and currency control compliance.',
     longDescription: 'Designed and engineered an automated intelligent legal workspace. By combining deep localized expertise in contract, tax, and currency law with advanced AI agents, this platform streamlines the multi-step compliance routing and auditing flow for international trade partners.',
-    image: '/src/assets/images/legal skill.png',
+    image: '/images/legal-skill.png',
     client: 'Kuznetsov & Associates',
     tags: ['LegalTech', 'Tax & Compliance Automation', 'AI Workspace', 'Contract Review'],
     metrics: [
@@ -119,7 +119,7 @@ export const PROJECTS: Project[] = [
     bulletsTg: [],
     caseDashboardImages: [],
     nextWorkId: 'sibur',
-    nextWorkImage: '/src/assets/images/sibur_card_1779284921773.png',
+    nextWorkImage: '/images/sibur-card.png',
     figmaLink: '#',
     websiteLink: 'https://liberating-wasabi-823.notion.site/Legal-Skill-17949890dab380f3b9cddbe85998f5ca?pvs=74'
   },
@@ -130,7 +130,7 @@ export const PROJECTS: Project[] = [
     role: 'Legal & Contract Automation Lead',
     description: 'Automated international trade structures, tax compliance systems, and standardized commercial contract generators for Russia’s largest integrated petrochemical producer.',
     longDescription: 'Designed and delivered a firm-wide automated legal-tech workflow, cutting average cross-border trade framework draft turnaround from days to under an hour. Coordinated multi-disciplinary tax risk analysts and software engineers.',
-    image: '/src/assets/images/sibur_card_1779284921773.png',
+    image: '/images/sibur-card.png',
     client: 'SIBUR Holdings',
     tags: ['Enterprise LegalTech', 'Contract Automation', 'Process Redesign', 'Cross-Border Compliance'],
     metrics: [
@@ -157,10 +157,10 @@ export const PROJECTS: Project[] = [
       'Collaborated closely with software partners to maintain updated legal logic frameworks reflecting the latest compliance updates.'
     ],
     caseDashboardImages: [
-      '/src/assets/images/sibur_card_1779284921773.png'
+      '/images/sibur-card.png'
     ],
     nextWorkId: 'karex',
-    nextWorkImage: '/src/assets/images/karex_card_1779284938576.png',
+    nextWorkImage: '/images/karex-card.png',
     figmaLink: '#',
     websiteLink: '#'
   },
@@ -171,7 +171,7 @@ export const PROJECTS: Project[] = [
     role: 'Head of Legal & Digital Workflows',
     description: 'Built digital workflow engines and standardized partner agreements for Kärcher’s primary distributor network.',
     longDescription: 'Pioneered digital transformation of regional contract workflows and distributor vetting operations, improving signing efficiency and ensuring complete legal compliance.',
-    image: '/src/assets/images/karex_card_1779284938576.png',
+    image: '/images/karex-card.png',
     client: 'Karex / Kärcher Partner',
     tags: ['Digital Transformation', 'Vendor Agreements', 'Contract Operations', 'Workflow Automation'],
     metrics: [
@@ -198,10 +198,10 @@ export const PROJECTS: Project[] = [
       'Audited multi-regional supplier contracts to avoid local tax nexus and regulatory penalties.'
     ],
     caseDashboardImages: [
-      '/src/assets/images/karex_card_1779284938576.png'
+      '/images/karex-card.png'
     ],
     nextWorkId: 'ecosort',
-    nextWorkImage: '/src/assets/images/PH picture (4).png',
+    nextWorkImage: '/images/ph-picture.png',
     figmaLink: '#',
     websiteLink: '#'
   }
