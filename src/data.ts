@@ -5,10 +5,10 @@ export const PROJECTS: Project[] = [
     id: 'ecosort',
     title: 'EcoSort',
     year: '2025-2026',
-    role: 'AI-Native Product Manager',
-    description: 'EcoSort solves the problem of not knowing local recycling rules (bin colors and what goes where differ a lot from country to country).',
+    role: '',
+    description: 'Founder. EcoSort solves the problem of not knowing local recycling rules (bin colors and what goes where differ a lot from country to country).',
     longDescription: 'EcoSort was built to solve the alarming contamination rates in urban municipal waste systems. By designing a frictionless "scan-to-resolve" user loop, Anna led a team of engineering and data science professionals to integrate light-weight edge classification with highly specific localized recycling databases.',
-    image: '/images/ph-picture.png',
+    image: '/images/ecosort.png',
     client: 'GreenCycle Initiative',
     tags: ['AI & Computer Vision', 'Product Strategy', 'B2C Mobile App', 'Sustainability Tech'],
     metrics: [
@@ -23,75 +23,16 @@ export const PROJECTS: Project[] = [
       'Intelligent disposal advisor for complex mixed-material packaging'
     ],
     introHeading: 'EcoSort',
-    introText: 'EcoSort solves the problem of not knowing local recycling rules (bin colors and what goes where differ a lot from country to country). With the app you:\n\n• Select country and language\n• Scan any packaging\n• Get local sorting instructions and eco-friendly tips\n\nCurrently live in 7 European countries: Spain, France, Italy (Rome and Naples), Germany, Austria, Netherlands, and Portugal. Available on the App Store and Google Play.',
-    bulletsTitleTg: 'Computer Vision Framework Delivery:',
-    bulletsTg: [
-      'Successfully trained and deployed optimized MobileNetV4 classifiers directly executing on modern iOS/Android clients under 250ms target latency constraint.',
-      'Integrated real-time bounding box detection overlaid with neon-lime indicators for easy material isolation.',
-      'Coordinated municipal waste datasets with localized regulations, ensuring highly accurate recycling advise across more than 40 regional hubs.',
-      'Optimized offline battery draw by offloading non-critical geo-queries to asynchronous local service workers.'
-    ],
-    bulletsTitleClick: 'User Acquisition and Behavior Redesign:',
-    bulletsClick: [
-      'Achieved rapid scale to 150k+ active installations through frictionless guest-only onboard loops.',
-      'Defined visual style showcasing vibrant tech motifs and neon brand cues featured on press channels.',
-      'Designed the localized carbon-offset reward tier representing clear tangible user environmental metrics.'
-    ],
-    caseDashboardImages: [
-      '/images/ph-picture.png',
-      '/images/next-work-laptop.png'
-    ],
-    nextWorkId: 'brickdev',
-    nextWorkImage: '/images/brickshow.png',
-    figmaLink: '#',
-    websiteLink: '#'
-  },
-  {
-    id: 'brickdev',
-    title: 'Brick.dev',
-    year: '2024-2025',
-    role: 'Product & Regulatory Lead',
-    description: 'A developer-first automated compliance layer and smart contract generator translating complex multi-state tax and legal codes into digital contract hooks.',
-    longDescription: 'Brick.dev was created to resolve the high-friction gap dividing agile tech startups and dense regulatory legal protocols. By crafting standard legal templates and automating complex tax-bracket analyses, Brick.dev allows teams to automatically audit software contracts, compute interstate tax obligations, and generate pre-vetted legal papers on the fly. The dashboard is tailored specifically to developers with full API integration capabilities.',
-    image: '/images/brickshow.png',
-    client: 'Brick Compliance Group',
-    tags: ['LegalTech', 'Tax & Contract Automation', 'B2B SaaS', 'Developer API Tools'],
-    metrics: [
-      'Adopted by 500+ scaling technology companies and agencies',
-      '99.8% compliance accuracy guaranteed across 48 operational tax zones',
-      'Replaced an average of 18 hours of manual legal lookup per commercial contract'
-    ],
-    features: [
-      'Dynamic multi-jurisdictional tax Nexus evaluation wizard',
-      'Pre-compiled legal modules linked with smart payment webhooks',
-      'Predictive legal advisory framework flagging compliance anomalies',
-      'Rich interactive documentation and sandbox environments for smooth engineer onboarding'
-    ],
-    introHeading: 'Brick.dev is a B2B SaaS Tech Services Company.',
-    introText: 'I worked as an AI Product Lead and led the development of 2 products: TgHunt and ClickHunt.',
-    bulletsTitleTg: 'TgHunt - AI Agents for Online Schools’ Help Desk:',
-    bulletsTg: [
-      '1. Delivered a 0-to-1 high-impact operational SaaS product by implementing AI Agents (RAG), reducing clients (online school) support load by 60% in 2 months.',
-      '2. Managed customers and conducted upsells to drive adoption.',
-      '3. Developed the product strategy and marketing strategy that secured the initial target users (online schools).',
-      '4. Reduced Time-to-First-Value from 14 days to 5 days by improving onboarding and AI agent setup flow, increasing early product adoption. Achieved 75% product usage retention among early users in the 1st month.'
-    ],
-    bulletsTitleClick: 'ClickHunt - Marketing Analytics SaaS:',
-    bulletsClick: [
-      '1. Led the end-to-end development of a SaaS Web Application from problem discovery to delivery.',
-      '2. Drove initial growth from 0 to 7 B2B customers in 2 months.',
-      '3. Conducted 30+ user interviews to build trust and education tools, increasing onboarding conversion by 15.'
-    ],
-    caseDashboardImages: [
-      '/images/tghunt-landing.png',
-      '/images/tghunt-widget.png',
-      '/images/clickhunt-metrics.png',
-      '/images/clickhunt-chart.png'
-    ],
+    introText: 'EcoSort solves the problem of not knowing local recycling rules (bin colors and what goes where differ a lot from country to country). With the app you:\n\n• Select country and language\n• Scan any packaging\n• Get local sorting instructions and eco-friendly tips\n\nCurrently live in 7 European countries: Spain, France, Italy (Rome and Naples), Germany, Austria, Netherlands, and Portugal. Available on the App Store and Google Play.\n\n1. Built custom materials for App Store, Google Play release, Product Hunt release.\n2. Defined the core UX logic to minimize time-to-value: users get a bin recommendation in under 3 taps.\n3. Explored growth channels and partnership opportunities with recycling networks and municipal services.\n4. Coordinated municipal waste datasets with localized regulations, ensuring highly accurate recycling advise.',
+    bulletsTitleTg: '',
+    bulletsTg: [],
+    bulletsTitleClick: '',
+    bulletsClick: [],
+    caseDashboardImages: [],
     nextWorkId: 'legalskill',
     nextWorkImage: '/images/legal-skill.png',
     figmaLink: '#',
-    websiteLink: '#'
+    websiteLink: 'https://ecosort.app/'
   },
   {
     id: 'legalskill',
@@ -118,10 +59,57 @@ export const PROJECTS: Project[] = [
     bulletsTitleTg: '',
     bulletsTg: [],
     caseDashboardImages: [],
-    nextWorkId: 'sibur',
-    nextWorkImage: '/images/sibur-card.png',
+    nextWorkId: 'brickdev',
+    nextWorkImage: '/images/brickshow.png',
     figmaLink: '#',
     websiteLink: 'https://liberating-wasabi-823.notion.site/Legal-Skill-17949890dab380f3b9cddbe85998f5ca?pvs=74'
+  },
+  {
+    id: 'brickdev',
+    title: 'Brick.dev',
+    year: '2024-2025',
+    role: '',
+    description: 'Shaped product and outreach strategy. Supported sales and conducted product demos.',
+    longDescription: 'Brick.dev was created to resolve the high-friction gap dividing agile tech startups and dense regulatory legal protocols. By crafting standard legal templates and automating complex tax-bracket analyses, Brick.dev allows teams to automatically audit software contracts, compute interstate tax obligations, and generate pre-vetted legal papers on the fly. The dashboard is tailored specifically to developers with full API integration capabilities.',
+    image: '/images/brickshow.png',
+    client: 'Brick Compliance Group',
+    tags: ['LegalTech', 'Tax & Contract Automation', 'B2B SaaS', 'Developer API Tools'],
+    metrics: [
+      'Adopted by 500+ scaling technology companies and agencies',
+      '99.8% compliance accuracy guaranteed across 48 operational tax zones',
+      'Replaced an average of 18 hours of manual legal lookup per commercial contract'
+    ],
+    features: [
+      'Dynamic multi-jurisdictional tax Nexus evaluation wizard',
+      'Pre-compiled legal modules linked with smart payment webhooks',
+      'Predictive legal advisory framework flagging compliance anomalies',
+      'Rich interactive documentation and sandbox environments for smooth engineer onboarding'
+    ],
+    introHeading: 'Brick.dev is a B2B SaaS Tech Services Company.',
+    introText: 'I worked as an AI Product Lead and led the development of 2 products: TgHunt and ClickHunt. Shaped product and outreach strategy. Supported sales and conducted product demos.',
+    bulletsTitleTg: 'TgHunt - AI Agents for Online Schools’ Help Desk:',
+    bulletsTg: [
+      '1. Delivered a 0-to-1 high-impact operational SaaS product by implementing AI Agents (RAG), reducing clients (online school) support load by 60% in 2 months.',
+      '2. Managed customers and conducted upsells to drive adoption.',
+      '3. Developed the product strategy and marketing strategy that secured the initial target users (online schools).',
+      '4. Reduced Time-to-First-Value from 14 days to 5 days by improving onboarding and AI agent setup flow, increasing early product adoption. Achieved 75% product usage retention among early users in the 1st month.'
+    ],
+    bulletsTitleClick: 'ClickHunt - Marketing Analytics SaaS:',
+    bulletsClick: [
+      '1. Led the end-to-end development of a SaaS Web Application from problem discovery to delivery.',
+      '2. Drove initial growth from 0 to 7 B2B customers in 2 months.',
+      '3. Conducted 30+ user interviews to build trust and education tools, increasing onboarding conversion by 15.'
+    ],
+    caseDashboardImages: [
+      '/images/clickhunt-1.png',
+      '/images/clickhunt-2.png',
+      '/images/tghunt-1.png',
+      '/images/tghunt-2.png'
+    ],
+    nextWorkId: 'sibur',
+    nextWorkImage: '/images/sibur.png',
+    figmaLink: '#',
+    websiteLink: 'https://tghunt.ru/'
   },
   {
     id: 'sibur',
@@ -130,7 +118,7 @@ export const PROJECTS: Project[] = [
     role: 'Legal & Contract Automation Lead',
     description: 'Automated international trade structures, tax compliance systems, and standardized commercial contract generators for Russia’s largest integrated petrochemical producer.',
     longDescription: 'Designed and delivered a firm-wide automated legal-tech workflow, cutting average cross-border trade framework draft turnaround from days to under an hour. Coordinated multi-disciplinary tax risk analysts and software engineers.',
-    image: '/images/sibur-card.png',
+    image: '/images/sibur.png',
     client: 'SIBUR Holdings',
     tags: ['Enterprise LegalTech', 'Contract Automation', 'Process Redesign', 'Cross-Border Compliance'],
     metrics: [
@@ -156,11 +144,9 @@ export const PROJECTS: Project[] = [
       'Managed regulatory and corporate taxation advisory portfolios, resolving complex tariff audits and multi-jurisdictional liabilities.',
       'Collaborated closely with software partners to maintain updated legal logic frameworks reflecting the latest compliance updates.'
     ],
-    caseDashboardImages: [
-      '/images/sibur-card.png'
-    ],
+    caseDashboardImages: [],
     nextWorkId: 'karex',
-    nextWorkImage: '/images/karex-card.png',
+    nextWorkImage: '/images/karex.png',
     figmaLink: '#',
     websiteLink: '#'
   },
@@ -168,10 +154,10 @@ export const PROJECTS: Project[] = [
     id: 'karex',
     title: 'Karex',
     year: '2020-2021',
-    role: 'Head of Legal & Digital Workflows',
-    description: 'Built digital workflow engines and standardized partner agreements for Kärcher’s primary distributor network.',
+    role: '',
+    description: 'In-house lawyer for Karex, Russia’s largest Kärcher distributor.',
     longDescription: 'Pioneered digital transformation of regional contract workflows and distributor vetting operations, improving signing efficiency and ensuring complete legal compliance.',
-    image: '/images/karex-card.png',
+    image: '/images/karex.png',
     client: 'Karex / Kärcher Partner',
     tags: ['Digital Transformation', 'Vendor Agreements', 'Contract Operations', 'Workflow Automation'],
     metrics: [
@@ -184,24 +170,15 @@ export const PROJECTS: Project[] = [
       'Centralized regulatory verification audit checkpoints',
       'Standardized high-volume dealer channel frameworks'
     ],
-    introHeading: 'Legal Operations and Digital Workflow Restructuring.',
-    introText: 'At Karex, the primary official distributor network for Kärcher, I managed the end-to-end modernization of contract distribution and retail dealer agreement processing.',
-    bulletsTitleTg: 'Digital Workflow Modernization:',
-    bulletsTg: [
-      'Transitioned 40+ sales branches to electronic signatures and cloud agreement templates, lowering onboarding friction and contract loop durations.',
-      'Standardized and pre-cleared legal dealer terms, mitigating business risks and ensuring immediate alignment with trade tax laws.',
-      'Established unified compliance guidelines for wholesale purchasing partners.'
-    ],
-    bulletsTitleClick: 'Corporate Commercial Advisory:',
-    bulletsClick: [
-      'Represented commercial portfolios in negotiation loops, resolving liability disagreements with favorable contract terms and minimal litigation costs.',
-      'Audited multi-regional supplier contracts to avoid local tax nexus and regulatory penalties.'
-    ],
-    caseDashboardImages: [
-      '/images/karex-card.png'
-    ],
+    introHeading: 'At Karex, the primary official distributor network for Kärcher, I managed the end-to-end modernization of contract distribution and retail dealer agreement processing.',
+    introText: '1. Reduced deal closure time by 25% through workflow automation.\n2. Provided C-level legal advisory on new business initiatives and owned full contract review pipeline.\n3. Represented commercial portfolios in negotiation loops, resolving liability disagreements with favorable contract terms and minimal litigation costs.\n4. Standardized and pre-cleared legal dealer terms, mitigating business risks and ensuring immediate alignment with trade tax laws.\n5. Audited multi-regional supplier contracts to avoid local tax nexus and regulatory penalties.',
+    bulletsTitleTg: '',
+    bulletsTg: [],
+    bulletsTitleClick: '',
+    bulletsClick: [],
+    caseDashboardImages: [],
     nextWorkId: 'ecosort',
-    nextWorkImage: '/images/ph-picture.png',
+    nextWorkImage: '/images/ecosort.png',
     figmaLink: '#',
     websiteLink: '#'
   }

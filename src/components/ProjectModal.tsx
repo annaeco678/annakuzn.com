@@ -156,36 +156,36 @@ export default function ProjectModal({ project, onClose, onContactClick }: Proje
 
               {/* Links and Metadata Row - Matching brick2.png action badges */}
               <div className="pt-8 border-t border-gray-800 flex flex-wrap items-center justify-between gap-4">
-                <span className="font-mono text-xs text-brand-muted">
-                  To dive more into the details: 
-                  {project.id === 'legalskill' ? (
-                    <a 
-                      href="https://liberating-wasabi-823.notion.site/Legal-Skill-17949890dab380f3b9cddbe85998f5ca?pvs=74" 
+                {project.id === 'legalskill' ? (
+                  <span className="font-mono text-xs text-brand-muted">
+                    To dive more into the details:
+                    <a
+                      href="https://liberating-wasabi-823.notion.site/Legal-Skill-17949890dab380f3b9cddbe85998f5ca?pvs=74"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-brand-accent hover:opacity-70 underline ml-1.5 inline-flex items-center gap-1"
                     >
                       Notion Full Skill <ExternalLink size={12} />
                     </a>
-                  ) : (
-                    <a href="#" className="text-brand-accent hover:opacity-70 underline ml-1.5 inline-flex items-center gap-1">
-                      Figma Link <ExternalLink size={12} />
-                    </a>
-                  )}
-                </span>
+                  </span>
+                ) : (
+                  <span />
+                )}
 
                 <div className="flex items-center gap-3">
                   <span className="px-4 py-2 border border-gray-700 bg-brand-darker rounded-lg text-xs font-mono font-medium text-brand-muted">
                     Year / {project.year}
                   </span>
-                  <a
-                    href={project.websiteLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-5 py-2 bg-brand-accent text-black text-xs font-mono font-bold hover:bg-white hover:text-black transition-colors rounded shadow"
-                  >
-                    {project.id === 'legalskill' ? 'Read Notion Document' : 'Visit Website'}
-                  </a>
+                  {project.id !== 'sibur' && project.id !== 'karex' && (
+                    <a
+                      href={project.websiteLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-5 py-2 bg-brand-accent text-black text-xs font-mono font-bold hover:bg-white hover:text-black transition-colors rounded shadow"
+                    >
+                      {project.id === 'legalskill' ? 'Read Notion Document' : 'Visit Website'}
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

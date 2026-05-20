@@ -38,10 +38,7 @@ export default function HomeTab({ projects, headline, onProjectSelect }: HomeTab
             AI-first Product Manager with 5 years of experience shipping AI, SaaS and legaltech products.
           </p>
           <p className="leading-snug text-brand-muted">
-            Strong legal background with 3+ years of practice in contract and tax law.
-          </p>
-          <p className="text-neutral-500 font-light leading-snug">
-            Founder and startup experience.
+            Strong legal background with 3+ years of practice in contract and tax law. Founder and startup experience.
           </p>
         </div>
       </div>
@@ -80,7 +77,7 @@ export default function HomeTab({ projects, headline, onProjectSelect }: HomeTab
                     </span>
                   </div>
                   <p className="text-xs sm:text-sm text-brand-muted lowercase font-light">
-                    {project.role.toLowerCase()} — {project.description.toLowerCase()}
+                    {project.role ? `${project.role.toLowerCase()} — ${project.description.toLowerCase()}` : project.description.toLowerCase()}
                   </p>
                 </div>
               </div>

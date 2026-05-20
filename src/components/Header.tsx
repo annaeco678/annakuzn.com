@@ -43,14 +43,6 @@ export default function Header({ activeTab, setActiveTab }: HeaderProps) {
             </span>
           </Magnetic>
         </div>
-        <Magnetic strength={0.15}>
-          <a 
-            href="mailto:annakuzn09@gmail.com?subject=Collab" 
-            className="hover:text-brand-accent transition-colors font-sans font-normal block py-1"
-          >
-            start a project
-          </a>
-        </Magnetic>
       </div>
 
       {/* Massive lowercase title based on the uploaded image style */}
