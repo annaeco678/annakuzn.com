@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-signature: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-funnel: "Funnel Display", sans-serif;
+
+  /* Color palette copying the style of the uploaded image precisely */
+  --color-brand-bg: #141414;
+  --color-brand-darker: #141414;
+  --color-brand-accent: #ece7e1; /* Elegant warm off-white cream text */
+  --color-brand-muted: #9c9a96; /* Elegant muted warm gray for descriptions */
+}
+
+@layer base {
+  body {
+    background-color: var(--color-brand-bg);
+    color: var(--color-brand-accent);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom scrollbar styling for high-end feel */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-brand-darker);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #444;
+  }
+}
+
+/* Custom interactive custom cursor overrides - hide default OS cursor only on fine pointer (desktop) devices */
+@media (pointer: fine) {
+  body,
+  a,
+  button,
+  [role="button"],
+  .cursor-pointer,
+  input,
+  select,
+  textarea {
+    cursor: none !important;
+  }
+}
+
+/* Custom animation classes if needed */
+.clip-text-header {
+  letter-spacing: -0.05em;
+}
