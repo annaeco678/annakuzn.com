@@ -6,7 +6,7 @@ export const PROJECTS: Project[] = [
     title: 'EcoSort',
     year: '2025-2026',
     role: '',
-    description: 'Founder. EcoSort solves the problem of not knowing local recycling rules (bin colors and what goes where differ a lot from country to country).',
+    description: 'Founder. EcoSort solves the problem of not knowing local recycling rules (bin colors and rules differ a lot from country to country).',
     longDescription: 'EcoSort was built to solve the alarming contamination rates in urban municipal waste systems. By designing a frictionless "scan-to-resolve" user loop, Anna led a team of engineering and data science professionals to integrate light-weight edge classification with highly specific localized recycling databases.',
     image: '/images/ecosort.png',
     client: 'GreenCycle Initiative',
@@ -92,13 +92,14 @@ export const PROJECTS: Project[] = [
       '1. Delivered a 0-to-1 high-impact operational SaaS product by implementing AI Agents (RAG), reducing clients (online school) support load by 60% in 2 months.',
       '2. Managed customers and conducted upsells to drive adoption.',
       '3. Developed the product strategy and marketing strategy that secured the initial target users (online schools).',
-      '4. Reduced Time-to-First-Value from 14 days to 5 days by improving onboarding and AI agent setup flow, increasing early product adoption. Achieved 75% product usage retention among early users in the 1st month.'
+      '4. Reduced Time-to-First-Value from 14 days to 5 days by improving onboarding and AI agent setup flow, increasing early product adoption.',
+      '5. Achieved 75% product usage retention among early users in the 1st month.'
     ],
     bulletsTitleClick: 'ClickHunt - Marketing Analytics SaaS:',
     bulletsClick: [
       '1. Led the end-to-end development of a SaaS Web Application from problem discovery to delivery.',
       '2. Drove initial growth from 0 to 7 B2B customers in 2 months.',
-      '3. Conducted 30+ user interviews to build trust and education tools, increasing onboarding conversion by 15.'
+      '3. Conducted 30+ user interviews to build trust and education tools, increasing onboarding conversion by 15%.'
     ],
     caseDashboardImages: [
       '/images/clickhunt-1.png',
