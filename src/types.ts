@@ -15,8 +15,10 @@ export interface Project {
   introHeading?: string;
   introText?: string;
   bulletsTitleTg?: string;
+  bulletsIntroTg?: string;
   bulletsTg?: string[];
   bulletsTitleClick?: string;
+  bulletsIntroClick?: string;
   bulletsClick?: string[];
   caseDashboardImages?: string[];
   nextWorkId?: string;

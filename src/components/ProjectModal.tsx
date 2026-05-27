@@ -118,6 +118,11 @@ export default function ProjectModal({ project, onClose, onContactClick }: Proje
                   <h5 className="font-mono text-sm tracking-wider uppercase text-brand-accent font-bold">
                     {project.bulletsTitleTg}
                   </h5>
+                  {project.bulletsIntroTg && (
+                    <p className="text-sm sm:text-base text-brand-muted leading-relaxed font-light whitespace-pre-line max-w-3xl">
+                      {project.bulletsIntroTg}
+                    </p>
+                  )}
                   <div className="space-y-3 pl-1">
                     {project.bulletsTg.map((bullet, idx) => (
                       <div key={idx} className="flex items-start gap-4">
@@ -139,6 +144,11 @@ export default function ProjectModal({ project, onClose, onContactClick }: Proje
                   <h5 className="font-mono text-sm tracking-wider uppercase text-brand-accent font-bold">
                     {project.bulletsTitleClick}
                   </h5>
+                  {project.bulletsIntroClick && (
+                    <p className="text-sm sm:text-base text-brand-muted leading-relaxed font-light whitespace-pre-line max-w-3xl">
+                      {project.bulletsIntroClick}
+                    </p>
+                  )}
                   <div className="space-y-3 pl-1">
                     {project.bulletsClick.map((bullet, idx) => (
                       <div key={idx} className="flex items-start gap-4">
