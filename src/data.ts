@@ -88,7 +88,7 @@ export const PROJECTS: Project[] = [
     introHeading: 'Brick.dev is a B2B SaaS Tech Services Company.',
     introText: 'I joined brick.dev as an AI Product Lead and shipped two products from zero to one in under a year: tghunt, an ai support agent for online schools, and clickhunt, a marketing analytics tool with an ai assistant baked in. Shaped product and outreach strategy. Supported sales and conducted product demos.',
     bulletsTitleTg: 'TgHunt - AI Agents for Online Schools’ Help Desk:',
-    bulletsIntroTg: 'problem: support teams at online schools were spending [22 hours/week] on repetitive questions and response times were eroding nps and refund rates.\n\nwhat i built:',
+    bulletsIntroTg: 'problem: support teams at online schools were spending 22 hours/week on repetitive questions and response times were eroding nps and refund rates.\n\nwhat i did:',
     bulletsTg: [
       '1. Delivered a 0-to-1 high-impact operational product by implementing AI Agents (RAG), reducing clients (online school) support load by 60% in 2 months. Owned the rag architecture decision, chose the agent framework, ran weekly customer interviews with 6 online schools, wrote the eval set, and ran every demo myself.',
       '2. Managed customers and conducted upsells to drive adoption.',
@@ -97,7 +97,7 @@ export const PROJECTS: Project[] = [
       '5. Achieved 75% product usage retention among early users in the 1st month.'
     ],
     bulletsTitleClick: 'ClickHunt - Marketing Analytics SaaS:',
-    bulletsIntroClick: 'problem: small teams don’t have an analyst. so every question about users and performance turns into an hour of pulling numbers from different tools and combining them. clickhunt lets anyone ask the question in plain language and get the answer back with AI.',
+    bulletsIntroClick: 'problem: small teams don’t have an analyst. so every question about users and performance turns into an hour of pulling numbers from different tools and combining them. clickhunt lets anyone ask the question in plain language and get the answer back with AI.\n\nwhat i did:',
     bulletsClick: [
       '1. Led the end-to-end development of a SaaS Web Application from problem discovery to delivery.',
       '2. Drove initial growth from 0 to 7 B2B customers in 2 months.',
