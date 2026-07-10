@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, ExternalLink } from 'lucide-react';
 import { Project } from '../types';
@@ -10,6 +11,7 @@ interface ProjectModalProps {
 }
 
 export default function ProjectModal({ project, onClose, onContactClick }: ProjectModalProps) {
+  const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
   if (!project) return null;
 
   // Find the next project for infinite traversal
@@ -221,7 +223,8 @@ export default function ProjectModal({ project, onClose, onContactClick }: Proje
                   return (
                     <div
                       key={index}
-                      className="border border-gray-800 rounded-2xl overflow-hidden aspect-[4/3] bg-brand-bg relative group shadow-lg"
+                      onClick={() => setEnlargedImage(imgSrc)}
+                      className="border border-gray-800 rounded-2xl overflow-hidden aspect-[4/3] bg-brand-bg relative group shadow-lg cursor-zoom-in"
                     >
                       <img
                         src={imgSrc}
@@ -278,6 +281,28 @@ export default function ProjectModal({ project, onClose, onContactClick }: Proje
           </h2>
         </footer>
       </div>
+
+      {enlargedImage && (
+        <div
+          onClick={() => setEnlargedImage(null)}
+          className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8 cursor-zoom-out"
+        >
+          <button
+            onClick={(e) => { e.stopPropagation(); setEnlargedImage(null); }}
+            className="absolute top-4 right-4 sm:top-6 sm:right-6 p-3 bg-brand-darker border border-gray-800 hover:border-white text-gray-300 hover:text-white rounded-full transition-all cursor-pointer"
+            aria-label="Close image"
+          >
+            <X size={18} />
+          </button>
+          <img
+            src={enlargedImage}
+            alt="Enlarged view"
+            referrerPolicy="no-referrer"
+            className="max-w-full max-h-full object-contain shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </AnimatePresence>
   );
 }
