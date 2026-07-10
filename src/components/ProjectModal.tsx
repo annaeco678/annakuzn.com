@@ -186,7 +186,7 @@ export default function ProjectModal({ project, onClose, onContactClick }: Proje
                   <span className="px-4 py-2 border border-gray-700 bg-brand-darker rounded-lg text-xs font-mono font-medium text-brand-muted">
                     Year / {project.year}
                   </span>
-                  {project.id !== 'sibur' && project.id !== 'karex' && (
+                  {project.websiteLink && project.websiteLink !== '#' && (
                     <a
                       href={project.websiteLink}
                       target="_blank"

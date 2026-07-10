@@ -2,6 +2,57 @@ import { Project } from './types';
 
 export const PROJECTS: Project[] = [
   {
+    id: 'reclamamos',
+    title: 'Reclamamos',
+    year: '2026',
+    role: '',
+    description: 'A production qualification voice agent for personal injury law firms — ElevenLabs, Make.com, the full stack.',
+    longDescription: 'A production qualification voice agent for personal injury law firms — ElevenLabs, Make.com, the full stack.',
+    image: '/images/reclamamos.png',
+    tags: ['Voice AI', 'ElevenLabs', 'Make.com', 'LegalTech'],
+    introHeading: '',
+    introText: 'A production qualification voice agent for personal injury law firms — ElevenLabs, Make.com, the full stack.',
+    caseDashboardImages: [],
+    nextWorkId: 'tooly',
+    nextWorkImage: '/images/tooly.png',
+    figmaLink: '#',
+    websiteLink: '#'
+  },
+  {
+    id: 'tooly',
+    title: 'Tooly',
+    year: '2026',
+    role: '',
+    description: 'The fastest way to find the right AI tool, without scrolling endless launch feeds.',
+    longDescription: 'The fastest way to find the right AI tool, without scrolling endless launch feeds.',
+    image: '/images/tooly.png',
+    tags: ['AI Discovery', 'B2C', 'Product Hunt'],
+    introHeading: '',
+    introText: 'Tooly is the fastest way to find the right AI tool without scrolling endless launch feeds.',
+    caseDashboardImages: [],
+    nextWorkId: 'recv',
+    nextWorkImage: '/images/recv.png',
+    figmaLink: '#',
+    websiteLink: '#'
+  },
+  {
+    id: 'recv',
+    title: 'recv.pro',
+    year: '2026',
+    role: '',
+    description: 'Helps people edit and tailor their CV.',
+    longDescription: 'Helps people edit and tailor their CV.',
+    image: '/images/recv.png',
+    tags: ['B2C', 'AI', 'CV Builder'],
+    introHeading: '',
+    introText: 'recv.pro helps people edit and tailor their CV.',
+    caseDashboardImages: [],
+    nextWorkId: 'ecosort',
+    nextWorkImage: '/images/ecosort.png',
+    figmaLink: '#',
+    websiteLink: '#'
+  },
+  {
     id: 'ecosort',
     title: 'EcoSort',
     year: '2025-2026',
@@ -180,8 +231,8 @@ export const PROJECTS: Project[] = [
     bulletsTitleClick: '',
     bulletsClick: [],
     caseDashboardImages: [],
-    nextWorkId: 'ecosort',
-    nextWorkImage: '/images/ecosort.png',
+    nextWorkId: 'reclamamos',
+    nextWorkImage: '/images/reclamamos.png',
     figmaLink: '#',
     websiteLink: '#'
   }
