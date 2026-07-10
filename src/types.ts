@@ -6,6 +6,7 @@ export interface Project {
   description: string;
   longDescription: string;
   image: string;
+  imageFit?: 'cover' | 'contain';
   client?: string;
   tags: string[];
   metrics?: string[];

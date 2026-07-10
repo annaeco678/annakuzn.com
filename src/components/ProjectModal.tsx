@@ -227,7 +227,7 @@ export default function ProjectModal({ project, onClose, onContactClick }: Proje
                         src={imgSrc}
                         alt={`${project.title} Exhibit ${index + 1}`}
                         referrerPolicy="no-referrer"
-                        className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+                        className={`w-full h-full ${project.imageFit === 'contain' ? 'object-contain' : 'object-cover'} group-hover:scale-[1.03] transition-transform duration-500`}
                       />
                     </div>
                   );

@@ -57,7 +57,7 @@ export default function HomeTab({ projects, headline, onProjectSelect }: HomeTab
                     src={project.image}
                     alt={project.title}
                     referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover group-hover:scale-[1.01] transition-transform duration-500 ease-out"
+                    className={`w-full h-full ${project.imageFit === 'contain' ? 'object-contain' : 'object-cover'} group-hover:scale-[1.01] transition-transform duration-500 ease-out`}
                   />
                   {/* Subtle hover overlay shading */}
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300 pointer-events-none" />
