@@ -32,6 +32,7 @@ export const PROJECTS: Project[] = [
     introHeading: '',
     introText: 'Tooly is the fastest way to find the right AI tool without scrolling endless launch feeds.',
     caseDashboardImages: [
+      '/images/tooly-user-flow.png',
       '/images/tooly-1.png',
       '/images/tooly-2.png',
       '/images/tooly-3.png'
