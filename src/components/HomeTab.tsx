@@ -35,10 +35,7 @@ export default function HomeTab({ projects, headline, onProjectSelect }: HomeTab
         
         <div className="md:col-span-6 space-y-6">
           <p className="leading-snug text-brand-accent">
-            AI Product Manager with 5 years of experience shipping AI, SaaS and legaltech products.
-          </p>
-          <p className="leading-snug text-brand-muted">
-            Strong legal background with 3+ years of practice in contract and tax law. Founder and startup experience.
+            AI Product Manager with 4 years of experience shipping AI, SaaS and B2C products. Founder and startup experience.
           </p>
         </div>
       </div>
