@@ -211,7 +211,7 @@ export default function ProjectModal({ project, onClose, onContactClick }: Proje
                   SaaS PRODUCT EXHIBITS
                 </span>
                 <h4 className="text-xl sm:text-2xl font-display font-medium text-brand-accent">
-                  User Flow and Interactive Dashboards
+                  {project.id === 'tooly' ? 'User Flow' : 'User Flow and Interactive Dashboards'}
                 </h4>
               </div>
 
