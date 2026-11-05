@@ -201,9 +201,9 @@ export const PROJECTS: Project[] = [
   {
     id: 'sibur',
     title: 'SIBUR',
-    year: '2021-2022',
+    year: '2021-2023',
     role: '',
-    description: 'Product Manager',
+    description: 'Legal Counsel → Legal Engineer. Rolled out LegalTech tools to 2000+ stakeholders, cutting legal queries by 40%.',
     longDescription: 'Designed and delivered a firm-wide automated legal-tech workflow, cutting average cross-border trade framework draft turnaround from days to under an hour. Coordinated multi-disciplinary tax risk analysts and software engineers.',
     image: '/images/sibur.png',
     category: 'legal',
@@ -219,19 +219,12 @@ export const PROJECTS: Project[] = [
       'Compliance and customs logic rule trees',
       'Real-time transaction compliance checker'
     ],
-    introHeading: 'Corporate Regulatory LegalTech and Contract System Automation.',
-    introText: 'At SIBUR, I led the digital redesign and structured automation of dense commercial contract agreements and compliance checking systems.',
-    bulletsTitleTg: 'Workflow Automation & System Engineering:',
-    bulletsTg: [
-      'Coordinated the integration of automated document templates, transforming custom legal layouts into streamlined logical choice trees.',
-      'Created cross-border tax compliance rules guiding international sales and shipping contracts, which reduced errors in export declarations to near zero.',
-      'Established user-intuitive internal legal hubs where operational teams independently drafted high-value commercial agreements.'
-    ],
-    bulletsTitleClick: 'Commercial Compliance & Advisory:',
-    bulletsClick: [
-      'Managed regulatory and corporate taxation advisory portfolios, resolving complex tariff audits and multi-jurisdictional liabilities.',
-      'Collaborated closely with software partners to maintain updated legal logic frameworks reflecting the latest compliance updates.'
-    ],
+    introHeading: 'Legal Counsel → Legal Engineer at SIBUR, a large petrochemicals company. Member of the Corporate and Tax team.',
+    introText: '1. Contributed to the rollout of LegalTech tools across 7 departments (2000+ legal and business stakeholders), reducing company-wide legal queries by 40%.\n2. Increased retention in contract builder +18% in 1 month through UX optimization.\n3. Automated tax compliance by translating tax rules into a software playbook, identifying applicable taxes and responsible tax agents at contract stage, and reducing potential tax penalties by 2/3.\n4. Supported the review and analysis of international lease and supply agreements and advised on tax-related matters.',
+    bulletsTitleTg: '',
+    bulletsTg: [],
+    bulletsTitleClick: '',
+    bulletsClick: [],
     caseDashboardImages: [],
     nextWorkId: 'karex',
     nextWorkImage: '/images/karex.png',
