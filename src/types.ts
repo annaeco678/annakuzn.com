@@ -7,6 +7,7 @@ export interface Project {
   longDescription: string;
   image: string;
   imageFit?: 'cover' | 'contain';
+  category?: 'legal' | 'other';
   client?: string;
   tags: string[];
   metrics?: string[];

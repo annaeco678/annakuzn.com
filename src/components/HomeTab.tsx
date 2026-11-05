@@ -35,52 +35,59 @@ export default function HomeTab({ projects, headline, onProjectSelect }: HomeTab
         
         <div className="md:col-span-6 space-y-6">
           <p className="leading-snug text-brand-accent">
-            AI Product Manager with 4 years of experience shipping AI, SaaS and B2C products. Founder and startup experience.
+            Former lawyer turned legal engineer and legal AI builder.
           </p>
         </div>
       </div>
 
-      {/* Works Area Section - 2x2 Clean Grid as shown in the uploaded image */}
+      {/* Works Area Section - split into Legal + Legaltech / Other products */}
       <div id="works-section" className="mb-24 sm:mb-32 pt-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 sm:gap-x-12 sm:gap-y-16">
-          {projects.map((project) => {
-            return (
-              <div
-                key={project.id}
-                onClick={() => onProjectSelect(project)}
-                data-cursor="view"
-                className="group cursor-pointer flex flex-col space-y-4"
-              >
-                {/* Direct Image showcase Container with elegant rounded corners like the uploaded image */}
-                <div className="aspect-[1.4] w-full overflow-hidden rounded-xl border border-neutral-800 bg-brand-darker relative shadow-md">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    referrerPolicy="no-referrer"
-                    className={`w-full h-full ${project.imageFit === 'contain' ? 'object-contain' : 'object-cover'} group-hover:scale-[1.01] transition-transform duration-500 ease-out`}
-                  />
-                  {/* Subtle hover overlay shading */}
-                  <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300 pointer-events-none" />
-                </div>
+        {(['legal', 'other'] as const).map((cat) => {
+          const items = projects.filter((p) => p.category === cat);
+          if (items.length === 0) return null;
+          const label = cat === 'legal' ? 'Legal + Legaltech' : 'Other Products';
+          return (
+            <div key={cat} className="mb-16 sm:mb-20 last:mb-0">
+              <h2 className="text-xs sm:text-sm font-mono text-brand-muted tracking-widest uppercase mb-8 pb-3 border-b border-neutral-800">
+                {label}
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 sm:gap-x-12 sm:gap-y-16">
+                {items.map((project) => (
+                  <div
+                    key={project.id}
+                    onClick={() => onProjectSelect(project)}
+                    data-cursor="view"
+                    className="group cursor-pointer flex flex-col space-y-4"
+                  >
+                    <div className="aspect-[1.4] w-full overflow-hidden rounded-xl border border-neutral-800 bg-brand-darker relative shadow-md">
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        referrerPolicy="no-referrer"
+                        className={`w-full h-full ${project.imageFit === 'contain' ? 'object-contain' : 'object-cover'} group-hover:scale-[1.01] transition-transform duration-500 ease-out`}
+                      />
+                      <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300 pointer-events-none" />
+                    </div>
 
-                {/* Metadata: Title & Year row, fully lowercase under the image */}
-                <div className="space-y-1 font-sans px-1">
-                  <div className="flex justify-between items-baseline">
-                    <h3 className="text-brand-accent font-semibold text-lg sm:text-xl group-hover:text-white transition-colors duration-200 lowercase">
-                      {project.title.toLowerCase()}
-                    </h3>
-                    <span className="text-brand-muted font-mono text-[11px] sm:text-xs tracking-tight">
-                      {project.year}
-                    </span>
+                    <div className="space-y-1 font-sans px-1">
+                      <div className="flex justify-between items-baseline">
+                        <h3 className="text-brand-accent font-semibold text-lg sm:text-xl group-hover:text-white transition-colors duration-200 lowercase">
+                          {project.title.toLowerCase()}
+                        </h3>
+                        <span className="text-brand-muted font-mono text-[11px] sm:text-xs tracking-tight">
+                          {project.year}
+                        </span>
+                      </div>
+                      <p className="text-xs sm:text-sm text-brand-muted lowercase font-light">
+                        {project.role ? `${project.role.toLowerCase()} — ${project.description.toLowerCase()}` : project.description.toLowerCase()}
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-xs sm:text-sm text-brand-muted lowercase font-light">
-                    {project.role ? `${project.role.toLowerCase()} — ${project.description.toLowerCase()}` : project.description.toLowerCase()}
-                  </p>
-                </div>
+                ))}
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
       </div>
 
       {/* Custom Education Block - Replica on Main Page with matched layout */}

@@ -2,6 +2,25 @@ import { Project } from './types';
 
 export const PROJECTS: Project[] = [
   {
+    id: 'silow',
+    title: 'Silow',
+    year: '2026-present',
+    role: '',
+    description: 'Legal AI startup. Founding Legal AI CPO, shipping AI agents for AML and other internal legal workflows.',
+    longDescription: 'Silow is a Legal AI startup that helps companies analyze and automate their internal legal processes with AI agents built for their specific workflows and business needs.',
+    image: '/images/silow.png',
+    imageFit: 'contain',
+    category: 'legal',
+    tags: ['Legal AI', 'AML', 'AI Agents', 'B2B', 'Founding CPO'],
+    introHeading: 'Silow is a Legal AI startup that helps companies analyze and automate their internal legal processes with AI agents built for their specific workflows.',
+    introText: 'As Founding Legal AI CPO, I talk to customers, map how their legal processes actually run, identify opportunities for automation, decide which AI agents and features to build, and own early product growth and international expansion.\n\nThe first product direction is AML automation: AI agents for risk assessment, CDD/EDD reviews, and source-of-funds verification.\n\nThe core idea of Silow: not to offer yet another generic AI tool, but to build solutions around real processes and specific business tasks.',
+    caseDashboardImages: [],
+    nextWorkId: 'reclamamos',
+    nextWorkImage: '/images/reclamamos.png',
+    figmaLink: '#',
+    websiteLink: 'https://silow.ai/'
+  },
+  {
     id: 'reclamamos',
     title: 'AI voice agent for law firm',
     year: '2026',
@@ -10,12 +29,13 @@ export const PROJECTS: Project[] = [
     longDescription: 'A production qualification voice agent for personal injury law firms — ElevenLabs, Make.com, the full stack.',
     image: '/images/reclamamos.png',
     imageFit: 'contain',
+    category: 'legal',
     tags: ['Voice AI', 'ElevenLabs', 'Make.com', 'LegalTech'],
     introHeading: '',
     introText: 'A production qualification voice agent for personal injury law firms — ElevenLabs, Make.com, the full stack.',
     caseDashboardImages: [],
-    nextWorkId: 'tooly',
-    nextWorkImage: '/images/tooly.png',
+    nextWorkId: 'legalskill',
+    nextWorkImage: '/images/legal-skill.png',
     figmaLink: '#',
     websiteLink: '#'
   },
@@ -28,6 +48,7 @@ export const PROJECTS: Project[] = [
     longDescription: 'The fastest way to find the right AI tool, without scrolling endless launch feeds.',
     image: '/images/tooly.png',
     imageFit: 'contain',
+    category: 'other',
     tags: ['AI Discovery', 'B2C', 'Product Hunt'],
     introHeading: '',
     introText: 'Tooly is the fastest way to find the right AI tool without scrolling endless launch feeds.',
@@ -51,12 +72,13 @@ export const PROJECTS: Project[] = [
     longDescription: 'Helps people edit and tailor their CV.',
     image: '/images/recv.png',
     imageFit: 'contain',
+    category: 'other',
     tags: ['B2C', 'AI', 'CV Builder'],
     introHeading: '',
     introText: 'recv.pro helps people edit and tailor their CV.',
     caseDashboardImages: [],
-    nextWorkId: 'ecosort',
-    nextWorkImage: '/images/ecosort.png',
+    nextWorkId: 'silow',
+    nextWorkImage: '/images/silow.png',
     figmaLink: '#',
     websiteLink: '#'
   },
@@ -68,6 +90,7 @@ export const PROJECTS: Project[] = [
     description: 'Founder. EcoSort solves the problem of not knowing local recycling rules (bin colors and rules differ a lot from country to country).',
     longDescription: 'EcoSort was built to solve the alarming contamination rates in urban municipal waste systems. By designing a frictionless "scan-to-resolve" user loop, Anna led a team of engineering and data science professionals to integrate light-weight edge classification with highly specific localized recycling databases.',
     image: '/images/ecosort.png',
+    category: 'other',
     client: 'GreenCycle Initiative',
     tags: ['AI & Computer Vision', 'Product Strategy', 'B2C Mobile App', 'Sustainability Tech'],
     metrics: [
@@ -88,8 +111,8 @@ export const PROJECTS: Project[] = [
     bulletsTitleClick: '',
     bulletsClick: [],
     caseDashboardImages: [],
-    nextWorkId: 'legalskill',
-    nextWorkImage: '/images/legal-skill.png',
+    nextWorkId: 'tooly',
+    nextWorkImage: '/images/tooly.png',
     figmaLink: '#',
     websiteLink: 'https://ecosort.app/'
   },
@@ -101,6 +124,7 @@ export const PROJECTS: Project[] = [
     description: 'I built a niche skill rooted in my own legal expertise in international contract review, focused on tax agent obligations and currency control compliance.',
     longDescription: 'Designed and engineered an automated intelligent legal workspace. By combining deep localized expertise in contract, tax, and currency law with advanced AI agents, this platform streamlines the multi-step compliance routing and auditing flow for international trade partners.',
     image: '/images/legal-skill.png',
+    category: 'legal',
     client: 'Kuznetsov & Associates',
     tags: ['LegalTech', 'Tax & Compliance Automation', 'AI Workspace', 'Contract Review'],
     metrics: [
@@ -118,8 +142,8 @@ export const PROJECTS: Project[] = [
     bulletsTitleTg: '',
     bulletsTg: [],
     caseDashboardImages: [],
-    nextWorkId: 'brickdev',
-    nextWorkImage: '/images/brickshow.png',
+    nextWorkId: 'sibur',
+    nextWorkImage: '/images/sibur.png',
     figmaLink: '#',
     websiteLink: 'https://liberating-wasabi-823.notion.site/Legal-Skill-17949890dab380f3b9cddbe85998f5ca?pvs=74'
   },
@@ -131,6 +155,7 @@ export const PROJECTS: Project[] = [
     description: 'Shaped product and outreach strategy. Supported sales and conducted product demos.',
     longDescription: 'Brick.dev was created to resolve the high-friction gap dividing agile tech startups and dense regulatory legal protocols. By crafting standard legal templates and automating complex tax-bracket analyses, Brick.dev allows teams to automatically audit software contracts, compute interstate tax obligations, and generate pre-vetted legal papers on the fly. The dashboard is tailored specifically to developers with full API integration capabilities.',
     image: '/images/brickshow.png',
+    category: 'other',
     client: 'Brick Compliance Group',
     tags: ['LegalTech', 'Tax & Contract Automation', 'B2B SaaS', 'Developer API Tools'],
     metrics: [
@@ -168,8 +193,8 @@ export const PROJECTS: Project[] = [
       '/images/tghunt-1.png',
       '/images/tghunt-2.png'
     ],
-    nextWorkId: 'sibur',
-    nextWorkImage: '/images/sibur.png',
+    nextWorkId: 'ecosort',
+    nextWorkImage: '/images/ecosort.png',
     figmaLink: '#',
     websiteLink: 'https://tghunt.ru/'
   },
@@ -181,6 +206,7 @@ export const PROJECTS: Project[] = [
     description: 'Product Manager',
     longDescription: 'Designed and delivered a firm-wide automated legal-tech workflow, cutting average cross-border trade framework draft turnaround from days to under an hour. Coordinated multi-disciplinary tax risk analysts and software engineers.',
     image: '/images/sibur.png',
+    category: 'legal',
     client: 'SIBUR Holdings',
     tags: ['Enterprise LegalTech', 'Contract Automation', 'Process Redesign', 'Cross-Border Compliance'],
     metrics: [
@@ -220,6 +246,7 @@ export const PROJECTS: Project[] = [
     description: 'In-house lawyer for Karex, Russia’s largest Kärcher distributor.',
     longDescription: 'Pioneered digital transformation of regional contract workflows and distributor vetting operations, improving signing efficiency and ensuring complete legal compliance.',
     image: '/images/karex.png',
+    category: 'legal',
     client: 'Karex / Kärcher Partner',
     tags: ['Digital Transformation', 'Vendor Agreements', 'Contract Operations', 'Workflow Automation'],
     metrics: [
@@ -239,8 +266,8 @@ export const PROJECTS: Project[] = [
     bulletsTitleClick: '',
     bulletsClick: [],
     caseDashboardImages: [],
-    nextWorkId: 'reclamamos',
-    nextWorkImage: '/images/reclamamos.png',
+    nextWorkId: 'brickdev',
+    nextWorkImage: '/images/brickshow.png',
     figmaLink: '#',
     websiteLink: '#'
   }
