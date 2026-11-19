@@ -128,6 +128,16 @@ export default function HomeTab({ projects, headline, onProjectSelect }: HomeTab
             <div className="flex flex-wrap items-center justify-end gap-3.5 pt-4">
               <Magnetic strength={0.2}>
                 <a
+                  href="/cv"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-transparent border border-neutral-700 hover:border-neutral-400 text-neutral-300 text-xs font-semibold px-5 py-2.5 rounded-full cursor-pointer transition-colors font-sans"
+                >
+                  view CV
+                </a>
+              </Magnetic>
+              <Magnetic strength={0.2}>
+                <a
                   href="mailto:annakuzn09@gmail.com"
                   className="bg-brand-accent text-[#121212] font-semibold text-xs sm:text-sm px-6 py-2.5 rounded-full hover:bg-white transition-all shadow"
                 >
