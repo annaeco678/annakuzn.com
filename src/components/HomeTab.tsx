@@ -40,6 +40,18 @@ export default function HomeTab({ projects, headline, onProjectSelect }: HomeTab
           <p className="leading-snug text-brand-muted text-base sm:text-lg">
             Currently leading GTM and market expansion at Jurimesh (a legal due diligence platform) and independently building an intelligence layer for law firms. I write about legal AI on <a href="https://www.linkedin.com/in/annakuz1/" target="_blank" rel="noopener noreferrer" className="underline hover:text-brand-accent transition-colors">LinkedIn</a>.<br />Based in Barcelona. Let’s grab an ice cream, here or anywhere in the world:)
           </p>
+          <div className="pt-2">
+            <Magnetic strength={0.2}>
+              <a
+                href="/cv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-brand-accent text-[#121212] font-semibold text-xs sm:text-sm px-6 py-2.5 rounded-full hover:bg-white transition-all shadow"
+              >
+                view CV →
+              </a>
+            </Magnetic>
+          </div>
         </div>
       </div>
 
