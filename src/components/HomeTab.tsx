@@ -35,7 +35,10 @@ export default function HomeTab({ projects, headline, onProjectSelect }: HomeTab
         
         <div className="md:col-span-6 space-y-6">
           <p className="leading-snug text-brand-accent">
-            Former lawyer turned legal engineer and legal AI builder.
+            International Business and Tax Lawyer turned Legal AI Builder and GTM Lead.
+          </p>
+          <p className="leading-snug text-brand-muted text-base sm:text-lg">
+            Currently leading GTM and market expansion at Jurimesh (a legal due diligence platform) and independently building an intelligence layer for law firms. I write about legal AI on <a href="https://www.linkedin.com/in/annakuz1/" target="_blank" rel="noopener noreferrer" className="underline hover:text-brand-accent transition-colors">LinkedIn</a>.<br />Based in Barcelona. Let’s grab an ice cream, here or anywhere in the world:)
           </p>
         </div>
       </div>
